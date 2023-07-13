@@ -1,15 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 body, ul {
     margin: 0;
     padding: 0;
+}
+
+.main-container {
+    width: 100vw;
+    background: url('../static/masjid-hero.jpg'); 
+  
+    height:100vh;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    
     color: #fff;
     padding: 10px;
+    width: 100%;
 }
 
 .nav-bar ul {
@@ -19,32 +29,51 @@ body, ul {
 
 .nav-bar ul li {
     list-style: none;
+    padding: 0 3%
 }
 
 .nav-bar ul li a {
-    color: #fff;
+    color: #0ca53a;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
 
 .donate-button {
-    background-color: #f00;
+    background-color:#0ca53a;
+    border-radius: 15px;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
 }
 
 .logo {
-    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: #0ca53a;
+    font-weight: 500;
+    padding-left: 2%;
+    
 }
 
 .hero {
     position: relative;
 }
 
-.hero-image {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: -1;
+.nav-bar #hamburger-icon {
+    display: none;
 }
 
+.nav-bar .mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar .desktop-nav, .nav-bar .donate-button {
+        display: none;
+    }
+    .nav-bar #hamburger-icon {
+        display: block;
+    }
+    .nav-bar .mobile-nav.active {
+        display: block;
+    }
+}
