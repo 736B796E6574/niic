@@ -37,7 +37,7 @@ img{
 
 .hero__test{
     width: 30%;
-    height: 400px;
+    
     margin: 30px;
     border-radius: 10px;
     border: 1px #009000 solid;
@@ -48,6 +48,7 @@ img{
     border: 1px #009000 solid;
     border-radius: 10px;
     margin: 10px;
+    background-color: #93d793;
     
 }
 
@@ -74,4 +75,14 @@ img{
     flex-direction: column;
     justify-content: center;
     margin: 10px;
+    color: #9820bc;
 }
+
+.hero__event-name{
+    font-size: 24px;
+}
+.hero__event-location, .hero__event-time{
+    font-size: 16px;
+}
+
+
