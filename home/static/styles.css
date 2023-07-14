@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #fafafa;
+body {
+  background-color: #fafafa;
 }
-body, ul {
-    margin: 0;
-    padding: 0;
-}
-
-img{
-    width: 100vw;
+body,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.navbar{
-    font-family: 'Libre Baskerville', sans-serif;
+img {
+  width: 100vw;
+}
+
+.navbar {
+  font-family: "Libre Baskerville", sans-serif;
 }
 
 .nav-link,
@@ -25,64 +26,140 @@ img{
 .nav-link:visited,
 .nav-link:hover,
 .nav-link:active {
-    color: #009000 !important; /* Change the color according to your requirement */
-    font-family: 'Libre Baskerville', sans-serif !important;
-    font-weight: 500;
+  color: #009000 !important; /* Change the color according to your requirement */
+  font-family: "Libre Baskerville", sans-serif !important;
+  font-weight: 500;
 }
 
-.hero__container{
-    display: flex;
-    justify-content: space-between;
+.hero__container {
+  display: flex;
+  justify-content: space-around;
 }
 
-.hero__test{
-    width: 30%;
-    
-    margin: 30px;
-    border-radius: 10px;
-    border: 1px #009000 solid;
+.hero__test {
+  width: 30%;
+
+  margin: 30px;
+  border-radius: 10px;
+  border: 1px #009000 solid;
 }
 
-.hero__event{
-    display: flex;
-    border: 1px #009000 solid;
-    border-radius: 10px;
-    margin: 10px;
-    background-color: #93d793;
-    
+.hero__event {
+  display: flex;
+  border: 1px #009000 solid;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #93d793;
 }
 
-.hero__upcoming-events{
-    color: #009000; 
-    font-family: 'Libre Baskerville', sans-serif !important;
-    font-weight: 500;
+.hero__upcoming-events {
+  color: #009000;
+  font-family: "Libre Baskerville", sans-serif !important;
+  font-weight: 500;
 }
 
-.hero__event-date{
-    color: #fafafa;
-    background-color: #a431b3;
-    margin:5px;
-    border-radius: 10px;
-    padding:10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.hero__event-date {
+  color: #fafafa;
+  background-color: #a431b3;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.hero__event-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    color: #9820bc;
+.hero__event-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  color: #9820bc;
 }
 
-.hero__event-name{
-    font-size: 24px;
+.hero__event-name {
+  font-size: 24px;
 }
-.hero__event-location, .hero__event-time{
-    font-size: 16px;
+.hero__event-location,
+.hero__event-time {
+  font-size: 16px;
 }
 
+.hero__prayer-fajr {
+  background-color: #93d793;
+  margin: 10px;
+}
 
+.hero__prayers {
+  width: 15%;
+}
+
+.hero__prayer {
+  background-color: #93d793;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero__prayer-name {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Libre Baskerville", sans-serif !important;
+  font-weight: 500;
+  background-color: #a431b3;
+  border-radius: 10px;
+}
+
+.hero__prayer-time {
+  font-size: 24px;
+  font-family: "Libre Baskerville", sans-serif !important;
+  color: #9820bc;
+}
+
+.hero__image-slider {
+  width: 500px; /* or whatever width you want */
+  height: 400px;
+  overflow: hidden; /* hide parts of the image that are outside the container */
+}
+
+.hero__image-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will ensure that the image maintains aspect ratio but also fills the container */
+}
+
+.hero__text h2,
+.hero__text p {
+  color: #a431b3;
+  text-align: center;
+  margin: 30px;
+}
+
+.hero__text p {
+  color: #009000;
+  text-align: center;
+  margin: 30px;
+}
+
+.hero__image {
+  width: 100%; /* change this to set the desired width */
+  height: 200px; /* change this to set the desired height */
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero__image img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover; /* maintains the aspect ratio of the image while also filling its container */
+}
+
+.events-header,
+.prayer-times-header {
+  color: #a431b3;
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 20px !important;
+  margin: 5px auto !important;
+  text-align: center;
+}
